@@ -21,7 +21,7 @@ class GestureConfig:
     pinch_threshold: float = 0.1
     left_threshold: float = 0.2
     right_threshold: float = 0.8
-    cooldown: int = 4
+    cooldown: int = 7
 
 
 class GestureController:
