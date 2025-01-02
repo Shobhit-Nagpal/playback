@@ -56,9 +56,9 @@ class GestureController:
 
         if distance < self.config.pinch_threshold:
             return Gesture.TOGGLE_PLAY
-        elif hand_x < self.config.left_threshold:
+        elif hand_x > self.config.left_threshold:
             return Gesture.REWIND
-        elif hand_x > self.config.right_threshold:
+        elif hand_x < self.config.right_threshold:
             return Gesture.FORWARD
 
         return Gesture.NOP
